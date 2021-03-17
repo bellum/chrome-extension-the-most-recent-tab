@@ -1,0 +1,22 @@
+{
+  "name": "The Most Recent Tab",
+  "description": "Switch back and forth to the most recent tab using keyboard shortcut",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": [
+    "background",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "switch-back-and-forth": {
+      "suggested_key": {
+        "default": "Alt+Q",
+        "mac": "Alt+Q"
+      },
+      "description": "Switch back and forth"
+    }
+  }
+}
